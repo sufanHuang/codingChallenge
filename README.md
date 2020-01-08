@@ -3,7 +3,7 @@
 2) Your job is to import the data and arrange them in a way that the elements are evenly distributed.
 3) You then have to create a server using node.js(micro or express) and serve this distribution upon request.
 4) Create a frontend using either VanillaJS, React, Angular, Vue or Hyperapp that consumes this distribution and colors all the elements with similar type. For Example, if I click "typeA", it should color all the positions that this type exists at.
-5) Provide buttons on the UI for each type so we can toggle between types.
+5) Provide buttons on the UI for each type so we can toggle between types. All unique types in the data should have buttons on the UI.
 6) Sample pictures are in the "outputExamples" folder.
 7) You can display the distribution in any similar way possible (get creative). Visualization is upto you (you can use libraries like D3.js).
 8) Please add references to all the mathematical formulas or theorms used to achieve these results.
