@@ -1,39 +1,39 @@
-import React, from 'react'
-import to from 'await-to-js'
+import React from 'react'
 import axios from 'axios'
 
 
-let callServerData = async ()=> {
-    let [error,result] = await to(axios.get('express_backend'))
-    let data = result.data
-    console.log(data)
-    if (error) {
-        console.log(error)
+class Home extends React.Component {
+    state = {
+        data: []
     }
-        return data
-}
 
-let data = callServerData()
-console.log(data)
+    componentDidMount (){
+        axios.get('express_backend')
+            .then(res=>{
+                let data = res.data
+                this.setState({data})
+            })
+    }
 
-function Home () {
-
+render(){
     return(
-        <div>
+        <div className= "app">
             <h3> All </h3>
             <div className= 'items'>
-                {data.map(item =>(
+                { this.state.data.map(item =>(
                     <div key={item.id} className='item'>
-                        <h3>{ item.type }</h3>
-                        <p> { item.description }</p>
-                        <h4>{ item.company }</h4>
+                        <h5>{ item.type }</h5>
+                        <h6>{ item.description }</h6>
+                        <h6>{ item.company}</h6>
                     </div>
-                    ))}
+                ))}
             </div>
-
-
         </div>
     )
+
+}
+
+
 }
 
 export default Home

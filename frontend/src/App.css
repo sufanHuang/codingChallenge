@@ -1,3 +1,8 @@
+.app{
+  margin: 2rem;
+  padding:2rem;
+}
+
 h3{
   font-family: "Comic Sans MS", sans-serif;
   alignment: center;
@@ -8,12 +13,14 @@ h3{
   display: flex;
   flex-flow: wrap;
   align-items: center;
-  justify-content: center
+  justify-content: center;
+  width: 10vm;
 }
 
 .item{
   display:flex;
   flex-direction:column;
+  width:1rem;
   margin:.5rem;
   padding:0.5rem;
   border-radius: 10px;
