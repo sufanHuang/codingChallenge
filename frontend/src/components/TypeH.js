@@ -2,7 +2,7 @@ import React from 'react'
 import axios from 'axios'
 
 
-class TypeD extends React.Component {
+class TypeH extends React.Component {
     state = {
         data: []
     }
@@ -16,13 +16,13 @@ class TypeD extends React.Component {
     }
 
     render(){
-        const TypeD = this.state.data.filter((item)=> item.type === 'typeD')
-        const  countTypeD = TypeD.length
+        const TypeH = this.state.data.filter((item)=> item.type === 'typeH')
+        const  countTypeH = TypeH.length
         return(
             <div className= "app">
-                <h3> TypeD Count {countTypeD} </h3>
+                <h3> TypeH Count {countTypeH} </h3>
                 <div className= 'container'>
-                    { TypeD.map(item =>(
+                    { TypeH.map(item =>(
                         <div key={item.id} className='item'>
                             <h5>{ item.type }</h5>
                             <h6>{ item.id }</h6>
@@ -35,4 +35,4 @@ class TypeD extends React.Component {
 
 }
 
-export default TypeD
+export default TypeH

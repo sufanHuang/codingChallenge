@@ -15,6 +15,13 @@ export default class BaseLayout extends Component {
                             <li><NavLink activeClassName ='selected' className = 'nav-link' exact to='/typeC'>TypeC</NavLink></li>
                             <li><NavLink activeClassName ='selected' className = 'nav-link' exact to='/typeD'>TypeD</NavLink></li>
                             <li><NavLink activeClassName ='selected' className = 'nav-link' exact to='/typeE'>TypeE</NavLink></li>
+                            <li><NavLink activeClassName ='selected' className = 'nav-link' exact to='/typeF'>TypeF</NavLink></li>
+                            <li><NavLink activeClassName ='selected' className = 'nav-link' exact to='/typeG'>TypeG</NavLink></li>
+                            <li><NavLink activeClassName ='selected' className = 'nav-link' exact to='/typeH'>TypeH</NavLink></li>
+                            <li><NavLink activeClassName ='selected' className = 'nav-link' exact to='/typeI'>TypeI</NavLink></li>
+                            <li><NavLink activeClassName ='selected' className = 'nav-link' exact to='/typeJ'>TypeJ</NavLink></li>
+                            <li><NavLink activeClassName ='selected' className = 'nav-link' exact to='/typeK'>TypeK</NavLink></li>
+                            <li><NavLink activeClassName ='selected' className = 'nav-link' exact to='/typeL'>TypeL</NavLink></li>
 
                         </ul>
                     </div>
@@ -25,7 +32,7 @@ export default class BaseLayout extends Component {
                 </div>
 
                 <div className='footer'>
-                    <p> @ 2019 Copyright Sufan Huang</p>
+                    <p> @ 2020 Copyright Sufan Huang</p>
                 </div>
             </div>
         )

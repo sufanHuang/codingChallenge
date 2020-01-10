@@ -5,10 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "npm run start",
-    "frontend": "cd frontend && npm run build"
+    "server": "node server.js"
   },
-  "author": "bhargav",
+  "author": "sufan",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
