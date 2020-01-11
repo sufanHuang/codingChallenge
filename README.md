@@ -40,3 +40,7 @@ sh start.sh
  
 3. __getChartData()__: This alsorithm is used for visualization using react-chart2. I use [Brad Traversy's reactcharts project](https://github.com/bradtraversy/reactcharts/blob/master/src/components/Chart.js)
    and [react-chartjs-2 documentation](https://www.npmjs.com/package/react-chartjs-2) as reference.
+   
+## Deployment
+* Using AWS S3 : http://codingchallengesufan.s3-website-us-east-1.amazonaws.com/
+* Using netlify: https://data-visualization-sufan.netlify.com/
