@@ -15,7 +15,7 @@ class Home extends React.Component {
 
     }
     getData = ()=>{
-        axios.get('express_backend')
+        axios.get('/elements.json')
             .then(res=>{
                 let data = res.data
                 this.setState({data})
