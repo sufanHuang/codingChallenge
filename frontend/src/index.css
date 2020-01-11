@@ -60,12 +60,13 @@ h1{
   font-family: 'Quicksand', sans-serif;
 }
 
-.header li {
-  text-decoration: none;
-  margin: 1em;
-  color: white;
-  transition: 0.5s;
-}
+.typeBtn {
+   text-decoration: none;
+   margin: 1em;
+   color: #17556b;
+   transition: 0.5s;
+ }
+
 
 
 .footer {

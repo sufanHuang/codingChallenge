@@ -21,4 +21,22 @@
 2) Output images do not necessarily represent even distribution
 
 ## Instructions To Test The App
-{{Your Instructions}}
+1. Clone to local machine:
+````javascript
+git clone https://github.com/sufanHuang/codingChallenge.git
+````
+2. Use this command to build/start/test the project:
+````javascript
+sh start.sh
+````
+
+## Algorithm 
+
+1. __getTypes()__ : This algorithm is used to extract all the existed types from data.  I use ````forEach````
+  to loop through data, then ````push```` the types that are unique to the result array.
+  
+2. __getTypeCount()__: This algorithm is used to count how many items each type has from data. I use ````reduce````
+  to get the total count of current type, then use ````map```` on top to loop through each type.
+ 
+3. __getChartData()__: This alsorithm is used for visualization using react-chart2. I use [Brad Traversy's reactcharts project](https://github.com/bradtraversy/reactcharts/blob/master/src/components/Chart.js)
+   and [react-chartjs-2 documentation](https://www.npmjs.com/package/react-chartjs-2) as reference.

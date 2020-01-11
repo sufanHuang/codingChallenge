@@ -63,9 +63,8 @@ function ShowTypes (props) {
         <div>
             <nav className= 'header'>
                 <ul>
-                    <li>Types</li>
                     { types.map( (type,index)=>(
-                        <li key = {index}>{type}</li>
+                        <li key = {index}><button className='typeBtn'>{type}</button></li>
                     ))}
                 </ul>
             </nav>
