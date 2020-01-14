@@ -1,7 +1,7 @@
 import React from 'react'
 import axios from 'axios'
-import _ from 'lodash'
 import ShowTypes from './ShowTypes'
+import _ from 'lodash'
 
 
 class Home extends React.Component {
@@ -15,7 +15,7 @@ class Home extends React.Component {
 
     }
     getData = ()=>{
-        axios.get('/elements.json')
+        axios.get('/data')
             .then(res=>{
                 let data = res.data
                 this.setState({data})

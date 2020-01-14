@@ -30,15 +30,22 @@ git clone https://github.com/sufanHuang/codingChallenge.git
 sh start.sh
 ````
 
-## Algorithm 
+## Algorithms
+1. __shuffleItems()__: used to randomize data on the backend. I created a trueOrFalse() to return a random true/false result. 
+    When each item in data is mapped, the result array  ````push```` or ````unshift```` the item, based on the trueOrFalse() result.
+    Unit test for this module is in ```/test.js```.
+  
+2. __getData()__: used in frontend to fetch data from backend using axios.
 
-1. __getTypes()__ : This algorithm is used to extract all the existed types from data.  I use ````forEach````
+3. __handleClick()__: used in frontend to display items of the same type. 
+
+4. __getTypes()__ :  used to extract all the existed types from data.  I use ````forEach````
   to loop through data, then ````push```` the types that are unique to the result array.
   
-2. __getTypeCount()__: This algorithm is used to count how many items each type has from data. I use ````reduce````
+5. __getTypeCount()__: used to count how many items each type has from data. I use ````reduce````
   to get the total count of current type, then use ````map```` on top to loop through each type.
  
-3. __getChartData()__: This alsorithm is used for visualization using react-chart2. I use [Brad Traversy's reactcharts project](https://github.com/bradtraversy/reactcharts/blob/master/src/components/Chart.js)
+6. __getChartData()__: used for visualization using react-chart2. I use [Brad Traversy's reactcharts project](https://github.com/bradtraversy/reactcharts/blob/master/src/components/Chart.js)
    and [react-chartjs-2 documentation](https://www.npmjs.com/package/react-chartjs-2) as reference.
    
 ## Deployment
